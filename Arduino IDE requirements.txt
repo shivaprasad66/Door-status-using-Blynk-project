@@ -1,0 +1,10 @@
+Board: install 'esp32 by espressif' in 
+	  Tools-->Board-->Board manager
+library: sketch-->include library-->manage library--> search 'blynk'-by volodymyr-->install
+Select Port: com4 or com5
+Select Board: esp32--> ESP32-WROOM-DA-MODULE
+
+ compile, upload through port 
+
+
+
