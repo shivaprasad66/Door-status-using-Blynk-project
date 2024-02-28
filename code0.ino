@@ -25,9 +25,9 @@ void notifyOnButtonPress()
     Serial.println("Someone Opened the door");
     Blynk.logEvent("OPEN","****Someone OPENED the Door****");
     digitalWrite(buzzer, HIGH);
-    digitalWrite(ledred, LOW);
+    digitalWrite(ledred, HIGH);
     digitalWrite(ledcom, HIGH);
-    digitalWrite(ledgreen, HIGH);
+    digitalWrite(ledgreen, LED);
 
   
     previousState =1;
@@ -38,9 +38,9 @@ void notifyOnButtonPress()
     Serial.println("Door Closed");
     Blynk.logEvent("CLOSE","****Someone CLOSED the Door****");
     digitalWrite(buzzer, LOW);
-    digitalWrite(ledred, HIGH);
+    digitalWrite(ledred, LOW);
     digitalWrite(ledcom, HIGH);
-    digitalWrite(ledgreen, LOW);
+    digitalWrite(ledgreen, HIGH);
     
 
   }
